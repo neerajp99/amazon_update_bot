@@ -40,12 +40,6 @@ def respond():
 		bot.sendMessage(chat_id = chat_id, text = welcome_message, reply_to_message_id = message_id)
 
 
-	if encoded_text == "/add/{}":
-
-
-	if encoded_text == "/price/{url}"
-
-
 if __name__ == '__main__':
    app.run(threaded=True)
 
