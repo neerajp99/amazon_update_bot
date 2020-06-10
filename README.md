@@ -8,3 +8,5 @@
 	* Contributors:
 		- Divyam Bhagchandani (@divyambhagchandani)
 		- Neeraj Pandey (@neerajp99)
+
+![Alt text](screenshot.png "Sample")
