@@ -5,8 +5,9 @@ import sys
 import urllib3 
 
 class ProductDetails:
-	def __init__(self, url):
+	def __init__(self, url, username):
 		self.url = url
+		self.username = username
 
 	def get_content(self):
 		# Target URL
@@ -25,5 +26,5 @@ class ProductDetails:
 		soup = BeautifulSoup(amazon.content, 'html.parser')
 
 		# Find the extracted detail fields from the page 
-		self.product_name = soup.find(id="productTitle").get_text().strip()
-		self.product_price =  soup.find(id="priceblock_ourprice").get_text()[1:].strip().replace(',','')
+		self.product_name = soup.find(id = "productTitle").get_text().strip()
+		self.product_price =  soup.find(id = "priceblock_ourprice").get_text()[1:].strip().replace(',','')
