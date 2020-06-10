@@ -25,10 +25,5 @@ class ProductDetails:
 		soup = BeautifulSoup(amazon.content, 'html.parser')
 
 		# Find the extracted detail fields from the page 
-		product_name = soup.find(id="productTitle").get_text().strip()
-		product_price =  soup.find(id="priceblock_ourprice").get_text()[1:].strip().replace(',','')
-
-		print(product_name, product_price)
-
-x = ProductDetails("https://www.amazon.in/Amazon-Brand-Solimo-Holder-Enabled/dp/B07QXKC3SX/ref=sr_1_2?dchild=1&fst=as%3Aoff&pf_rd_p=78d458a9-535f-4ec0-a49f-f7de6a79c9a9&pf_rd_r=MNNA3DF2S2VCSF39DS21&qid=1583227118&refinements=p_n_format_browse-bin%3A19560800031&rnid=14019568031&s=kitchen&sr=1-2")
-x.get_content()
+		self.product_name = soup.find(id="productTitle").get_text().strip()
+		self.product_price =  soup.find(id="priceblock_ourprice").get_text()[1:].strip().replace(',','')
