@@ -14,7 +14,7 @@ geopy==1.21.0
 idna==2.9
 joblib==0.14.1
 nltk==3.5
-numpy==1.18.3
+numpy==1.22.0
 pandas==1.0.3
 patsy==0.5.1
 pycosat==0.6.3
